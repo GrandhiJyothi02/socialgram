@@ -1,0 +1,274 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* Login & Register Pages */
+
+body{
+    min-height:100vh;
+    background:linear-gradient(
+        135deg,
+        #833ab4,
+        #fd1d1d,
+        #fcb045
+    );
+}
+
+.container{
+    width:400px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.2);
+    margin:100px auto;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#e1306c;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#e1306c;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+p{
+    text-align:center;
+    margin-top:15px;
+}
+
+a{
+    text-decoration:none;
+    color:#e1306c;
+    font-weight:bold;
+}
+
+/* Navbar */
+
+.navbar{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.navbar h2{
+    margin:0;
+    color:#e1306c;
+}
+
+.navbar button{
+    width:auto;
+    padding:10px 15px;
+    margin-left:10px;
+}
+
+/* Feed Container */
+
+.main-container{
+    width:90%;
+    max-width:700px;
+    margin:30px auto;
+}
+
+/* Create Post */
+
+.create-post{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.create-post textarea{
+    resize:none;
+}
+
+.create-post button{
+    margin-top:10px;
+}
+
+/* Post Cards */
+
+.post{
+    background:white;
+    margin-bottom:20px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.post-header{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.avatar{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.username{
+    font-weight:bold;
+    font-size:16px;
+}
+
+.post img{
+    width:100%;
+    max-height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-top:10px;
+}
+
+.post-content{
+    margin:15px 0;
+    font-size:15px;
+}
+
+.post-actions{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+
+.post-actions button{
+    width:auto;
+    padding:8px 15px;
+    border:none;
+    border-radius:8px;
+    background:#f5f5f5;
+    color:black;
+    cursor:pointer;
+}
+
+.post-actions button:hover{
+    background:#ececec;
+}
+.auth-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.auth-page .container{
+    margin:0;
+}
+
+/* Profile Page */
+
+.profile-container{
+    width:90%;
+    max-width:900px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+}
+
+.profile-header{
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+
+.profile-pic{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+
+    border:5px solid #e1306c;
+}
+
+.profile-info{
+    flex:1;
+}
+
+.stats{
+    display:flex;
+    gap:40px;
+    margin:20px 0;
+}
+
+.stats div{
+    text-align:center;
+}
+
+.bio{
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+.edit-btn{
+    width:auto;
+    padding:10px 20px;
+}
+
+.gallery-title{
+    margin:20px 0;
+}
+
+.gallery{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
+
+    gap:10px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+input:invalid {
+    border: 2px solid #ff4d4d;
+}
+
+input:focus {
+    border: 2px solid #e1306c;
+    outline: none;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SocialGram</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>📸 SocialGram</h2>
+
+    <div>
+        <button onclick="location.href='profile.html'">
+            👤 Profile
+        </button>
+
+        <button onclick="logout()">
+            🚪 Logout
+        </button>
+    </div>
+</nav>
+
+<div class="main-container">
+
+    <div class="create-post">
+
+        <h3>Create New Post</h3>
+
+        <textarea
+            id="content"
+            placeholder="What's on your mind?"
+            rows="4"
+        ></textarea>
+
+        <button onclick="createPost()">
+            Share Post 🚀
+        </button>
+
+    </div>
+
+    <div id="posts"></div>
+
+</div>
+
+<script src="js/posts.js"></script>
+
+</body>
+</html>
