@@ -18,12 +18,14 @@ body{
 }
 
 .container{
-    width:400px;
+    width:90%;
+    max-width:400px;
     background:white;
     padding:30px;
     border-radius:15px;
     box-shadow:0 4px 20px rgba(0,0,0,0.2);
     margin:100px auto;
+    box-sizing:border-box;
 }
 
 h2{
@@ -271,4 +273,25 @@ input:invalid {
 input:focus {
     border: 2px solid #e1306c;
     outline: none;
+}
+
+@media (max-width: 768px){
+
+    .container{
+        width:95%;
+        margin:50px auto;
+        padding:20px;
+    }
+
+    input,
+    button,
+    textarea{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
 }
