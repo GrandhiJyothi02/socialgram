@@ -1,4 +1,4 @@
-const API_URL = "https://socialgram-backend-m2ef.onrender.com/"
+const API_URL = "https://socialgram-backend-m2ef.onrender.com"
 
 async function register() {
 
@@ -12,7 +12,7 @@ async function register() {
         document.getElementById("password").value;
 
     const response = await fetch(
-        `${API_URL}/auth/register`,
+       `${API_URL}/api/auth/register` ,
         {
             method: "POST",
             headers: {
@@ -50,7 +50,7 @@ async function login() {
     try {
 
         const response = await fetch(
-            `${API_URL}/auth/login`,
+           `${API_URL}/api/auth/login` ,
             {
                 method: "POST",
                 headers: {
